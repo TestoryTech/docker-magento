@@ -6,6 +6,7 @@ cd docker-magento
 docker build -t testory/magento244 2/debian-10
 docker-compose up -d
 docker exec -it docker-magento_magento_1 /usr/bin/expect /populate_db.sh
+docker exec -it docker-magento_magento_1 magento cache:flush
 ```
 
 Other times:
