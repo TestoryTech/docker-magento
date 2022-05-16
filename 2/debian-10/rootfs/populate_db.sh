@@ -1,6 +1,6 @@
 #!/usr/bin/expect -f
 set timeout -1
-spawn magento sampledata:deploy
+spawn magento sampledata:deploy -f
 match_max 100000
 expect -exact "Username: "
 send -- "5c2fc75b23872dc6762b30cd328ab19a\r"
